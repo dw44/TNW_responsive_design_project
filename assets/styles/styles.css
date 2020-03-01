@@ -1,0 +1,141 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.top-navbar {
+    background-color: rgb(19, 19, 19);
+    height:32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.top-main > li,
+.top-right > li {
+    display: inline-block;
+    margin: 4px;
+}
+
+.top-navbar a,
+.top-navbar a:visited {
+    color: hsla(0,0%,100%,.6);
+    text-decoration: none;
+}
+
+.top-navbar a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.second-nav {
+    height: 48px;
+    font-family: 'Oxanium';
+    font-size: 13px;
+    font-weight: 600;
+    color: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center-left-nav {
+    display: inline-block;
+}
+
+.second-nav li {
+    display: inline-block;
+    padding: 0 12px;
+}
+
+.center-left-nav a,
+.center-left-nav a:visited,
+.center-left-nav a:focus {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #aaa;
+}
+
+.center-left-nav a:hover {
+    color: #222;
+}
+
+.center-right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    font-size: 1.3em;
+}
+
+.search:hover {
+    color: #333;
+}
+
+#large-orange {
+    color: #f42;
+    font-size: 1.7em;
+}
+
+.center-right-nav a,
+.center-right-nav a:hover,
+.center-right-nav a:focus,
+.center-right-nav a:hover {
+    color: #222;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.join-btn,
+.join-btn:focus,
+.join-btn:visited {
+    background-color: #90c;
+    font-family: Helvetica, sans-serif;
+    line-height: 28px;
+    padding: 0 12px;
+    font-size: 11px;
+    color: #eee;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.join-btn:hover {
+    background-color: #0cc;
+}
+
+#large-orange {
+    color: #f42;
+    font-size: 1.8em;
+}
+
+#nav-logo {
+    width: 110px;
+    height: 48px;
+}
+
+#tech-fest {
+    background-color: #fff70a;
+    width: 100%;
+    height: 30px;
+    padding: 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+#tech-fest a,
+#tech-fest a:hover,
+#tech-fest a:visited,
+#tech-fest a:focus {
+    text-decoration: none;
+    color: #000;
+}
