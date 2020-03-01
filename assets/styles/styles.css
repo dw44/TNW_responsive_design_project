@@ -41,6 +41,7 @@
     font-size: 13px;
     font-weight: 600;
     color: #aaa;
+    padding: 7px 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,3 +140,5 @@
     text-decoration: none;
     color: #000;
 }
+
+/* Navbar(s) ends here */
