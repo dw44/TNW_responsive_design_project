@@ -53,7 +53,7 @@
 
 .second-nav li {
     display: inline-block;
-    padding: 0 12px;
+    padding: 0 4px;
 }
 
 .center-left-nav a,
@@ -93,6 +93,10 @@
     color: #222;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.center-right-nav > li:nth-of-type(4) {
+    padding: 0 8px;
 }
 
 .join-btn,
@@ -142,3 +146,46 @@
 }
 
 /* Navbar(s) ends here */
+
+/* Links to top/new articles */
+
+.cover {
+    height: 75vh;
+    max-height: 560px;
+    margin: 0 auto;
+    padding: 4px;
+    font-family: 'Lato';
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cover a,
+.cover a:hover,
+.cover a:focus,
+.cover a:visited {
+    display: block;
+    background: rgba(0,0,0,.25) url('../image-gradient.png') no-repeat;
+    background-size: 100% 100%;
+    text-decoration: none;
+    height: 100%;
+    color: #eee;
+    width: 100%;
+    height: 100%;
+}
+
+.cover > article {
+    border: 1px solid black;
+}
+
+.cover h5 {
+    font-size: 2em;
+}
+
+
+.double-height {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-image: url('../airpod_bg.png');
+    background-size: cover;
+}
