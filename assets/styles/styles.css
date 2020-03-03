@@ -157,13 +157,7 @@
     font-family: 'Lato';
     display: grid;
     grid-gap: 4px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.cover-story {
-    grid-column: span 1;
-    font-size: 10px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .cover a,
@@ -182,25 +176,41 @@
     height: 100%;
 }
 
-.cover h5 {
+.cover-story {
+    grid-column: span 1;
+    font-size: 10px;
+}
+
+.cover-story:nth-child(2n) {
+    background-image: url(../tnwconf-smalltop.jpg);
+    background-size: cover;
+}
+
+.cover-story:nth-child(3n) {
+    background-image: url(../fb-smallbot.jpg);
+    background-size: cover;
+}
+
+
+.cover-story h5 {
     font-family: 'Oxanium';
-    font-size: 1.1em;
+    font-size: 16px;
     padding: 2% 0;
 }
 
-.cover h2 {
-    font-size: 4.0em;
-    font-weight: 700;
+.cover-story h2 {
+    font-size: 3.4em;
+    font-weight: 900;
     padding: 1% 0;
 }
 
-.cover ul {
-    font-size: 0.9em;
+.cover-story ul {
+    font-size: 1em;
     padding: 1% 0;
     color: #ccc;
 }
 
-.cover li {
+.cover-story li {
     display: inline-block;
     padding: 4px;
 }
@@ -211,5 +221,9 @@
     background-image: url('../airpod_bg.png');
     background-size: cover;
     font-size: 15px;
+}
+
+#double-height h5 {
+    padding: 0;
 }
 
