@@ -4,8 +4,6 @@
         <meta charset="utf-8">
         <title>TNW</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Oxanium:400,500,600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/styles/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
         <script src="https://kit.fontawesome.com/05735a2e93.js" crossorigin="anonymous"></script>
@@ -29,9 +27,9 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-
             <div class="second-nav">
                 <ul class="center-left-nav">
+                    <li class="hide" id="nav-logo"><img src="assets/images/nav-logo.png"></li>
                     <li><a href="#">latest</a></li>
                     <li><a href="#">hard fork</a></li>
                     <li><a href="#">plugged</a></li>
@@ -40,69 +38,52 @@
                     <li><a href="#">growth quarters</a></li>
                     <li><a href="#">neural</a></li>
                 </ul>
-                <ul class="center-right-nav">
-                    <li><i class="search fas fa-search"></i></li>
-                    <li><img id="nav-logo" src="assets/tnw2020.svg"></li>
-                    <li><a href="#">kicks off in <span id="large-orange">109</span> days</a></li>
-                    <li><a href="#"><div class="join-btn">join us</div></a></li>
-                </ul>
+                <div class="center-right-nav">
+                    <a id="search" href="#"><i class="fas fa-search"></i></a>
+                </div>
             </div>            
-            <div id="tech-fest"><a href=#>Did you know we have a TECH FESTIVAL? Check it out →</a></div>
+            <a id="tech-fest" href=#>Did you know we have a TECH FESTIVAL? Check it out →</a>
         </nav>
-        <!-- Links to latest articles -->
-        <section class="cover">
-            <article class="cover-story" id="double-height">
-                <a href="#" class="cover-story-link">
+        <!-- Links to cover stories -->
+        <section class="cover-story-container">
+            <article class="cover-story" id="large-cover">
+                <a href="#" class="cover-story-link large-story">
+                    <div class="dateandlogo">
+                        <img class="tnw-cs-logo" src="assets/images/tnw logo.svg">
+                        <h6 class="cs-date">Friday — March 6, 2020</h6>
+                    </div>
                     <header class="cover-header">
-                        <h5>Gear</h5>
-                        <h2>The AirPods Pro have weaselled their way into my everyday life</h2>
-                        <ul>
+                        <h5 class="cs-category">Gear</h5>
+                        <h2 class="cs-title">Designers should understand users make most decisions without rational thinking</h2>
+                        <ul class="cover-story-info">
                             <li>by Luna Moonfang</li>
-                            <li><i class="far fa-clock"></i>    2 hours ago</li>
-                            <li><i class="fas fa-share-alt"></i>  2</li>
+                            <li><i class="far fa-clock"></i>&nbsp&nbsp2 hours ago</li>
+                            <li><i class="fas fa-share-alt"></i>&nbsp&nbsp8</li>
                         </ul>
                     </header>
                 </a>    
             </article>
-            <article class="cover-story" id="tnw-conf">
+            <article class="cover-story">
                 <a href="#" class="cover-story-link">
                     <header class="cover-header">
-                        <h2>Reddit, PayPal, Spotify, and more are speaking at TNW's tech
-                            festival in Amsterdam
-                        </h2>
+                        <h2 class="cs-title">Reddit, PayPal, Spotify, and more are speaking at TNW's tech festival in Amsterdam</h2>
                     </header>
-                </a> 
+                </a>    
             </article>
             <article class="cover-story">
                 <a href="#" class="cover-story-link">
                     <header class="cover-header">
-                        <h5>Apps</h5>
-                        <h2>How to keep Facebook Memories from showing up on your newsfeed</h2>
-                        <ul>
-                            <li>by Admiral Kunkka</li>
-                            <li><i class="far fa-clock"></i> 4 hours ago</li>
-                            <li><i class="fas fa-share-alt"></i> 11</li>
+                        <h5 class="cs-category">Tech</h5>
+                        <h2 class="cs-title">Twitch streamer cancelled for firing a gun into his monitor during livestream</h2>
+                        <ul class="cover-story-info">
+                            <li class="no-left-pad">by Kao Lin</li>
+                            <li><i class="far fa-clock"></i>&nbsp7 hours ago</li>
+                            <li><i class="fas fa-share-alt"></i>&nbsp&nbsp11</li>
                         </ul>
                     </header>
-                </a> 
+                </a>    
             </article>
         </section>
-        <!-- More news, deals, and funding rounds -->
-        <div class="wrapper">
-            <section class="latest">
-                <a href="#" class="latestnews">Latest News ></a>
-
-                <div class="story">
-                    <a href="#" class="story-link">
-                    </a>
-                    <h4 class="story-heading"><a href="#">EU fines Apple for slowing down iPhones</a></h4>
-                    <ul class="story-details">
-                        <li><a href="#">Carl Junior</a></li>
-                        <li>2 hours ago</li>
-                    </ul>
-                </div>
-            
-            </section>
-        </div>
+        <!-- Cover stories end above -->
     </body>
 </html>
