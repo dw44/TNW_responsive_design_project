@@ -243,6 +243,11 @@ a:visited {
 
 }
 
+/* Latest news */
+.latest {
+    margin-bottom: 56px;
+}
+
 .latest-news {
     margin-bottom: 24px;
     font-family: "Avalon";
@@ -266,8 +271,7 @@ a:visited {
 .latest-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 16px;
-    /* grid-template-rows: repeat(2, 1fr); */
+    grid-gap: 24px;
 }
 
 .latest-list-item {
@@ -314,4 +318,65 @@ a:visited {
 
 .lli-author-day > li {
     display: inline-block;
+}
+
+/* Latest news ends here */
+
+/* Deals section starts here */
+
+.deals {
+    margin-bottom: 56px;
+}
+
+.funding-rounds {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.funding-rounds a,
+.funding-rounds a:visited,
+.funding-rounds a:focus {
+    color: #444;
+}
+
+.funding-round-item {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.field-and-venture {
+    width: 270px;
+    margin: 0;
+    margin-top: -3px;
+    padding: 0 0 10px 16px;
+    background-color: #fff2ed;
+    border-bottom: 1px solid orangered;
+}
+
+.field-and-venture li {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.field-and-venture i {
+    color: #000;
+}
+
+.field-and-venture a:hover {
+    color: #000;
+}
+
+.funding-summary {
+    background-color: #fff2ed;
+    width: 270px;
+    padding: 15px 15px;
+    font-size: 13px;
+}
+
+.funding-summary span {
+    color: #777;
+    font-size: 12px;
 }
