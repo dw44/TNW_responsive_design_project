@@ -672,3 +672,20 @@ a:visited {
 }
 
 /* Fin */
+/* Media query for medium sized screen */
+
+@media only screen and (max-width: 1024px) {
+    .latest-list, .offer-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+    }
+    
+    .funding-round-item:nth-of-type(4) {
+        display: none;
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px;
+    }
+}
