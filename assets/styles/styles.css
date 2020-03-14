@@ -586,3 +586,89 @@ a:visited {
     text-decoration: line-through;
     font-size: 14px;
 } 
+
+/* Ads end here */
+
+/* Footer starts here */
+
+.footer {
+    width: 100vw;
+    height: 260px;
+    margin-top: 100px;
+    color: #aaa;
+}
+
+.footer-links {
+    height: 160px;
+    padding: 42px 0 28px 0;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.share-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.share-li {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.share-li:hover {
+    background-color: beige;
+}
+
+.share-img {
+    height: 20px;
+    width: 20px;
+}
+
+.footer-nav {
+    font-family: "Shentox";
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.footer-nav > li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.footer-nav a,
+.footer-nav a:focus,
+.footer-nav a:visited {
+    text-transform: uppercase;
+    color: #bbb;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}
+
+.footer-legal {
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-legal > h6 {
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2;
+    font-size: 14px;
+}
+
+/* Fin */
