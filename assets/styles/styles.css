@@ -326,7 +326,7 @@ a:visited {
 
 /* Deals section starts here */
 .deals {
-    margin-bottom: 56px;
+    margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 240px;
@@ -427,6 +427,12 @@ a:visited {
     line-height
 }
 
+.funding-round {
+    font-family: "Shentox";
+    font-size: 14px;
+    padding-top: 5px;
+}
+
 .investment-card {
     border-bottom: 1px solid #f42;
 }
@@ -504,7 +510,6 @@ a:visited {
 }
 
 .cat-story-link {
-    max-width: 368px;
     height: 276px;
     padding: 10px 10px;
     display: flex;
@@ -849,6 +854,62 @@ a:visited {
         margin-bottom: 5px;
     }
 
+    .deals {
+        margin-bottom: 56px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .funding-banner {
+        margin-bottom: 20px;
+    }
+
+    .company {
+        margin-bottom: 20px;
+    }
+
+    .company-funding, 
+    .company-title,
+    .funding-info,
+    .investment-card,
+    .story-byline {
+        width: 90vw;
+    }
+
+    .funding-banner > a {
+        margin-bottom: 20px;
+    }
+
+    .funding-rounds-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .funding-rounds-nav li {
+        border: none;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        width: 100vw;
+    }
+
+    .articles-by-cat {
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+
+    .bg-container,
+    .cat-story-link,
+    .latest-section-header,
+    .latest-stories,
+    .latest-stories > li {
+        width: 95vw;
+    }
 }
 
 
