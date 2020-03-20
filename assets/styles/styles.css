@@ -273,7 +273,7 @@ a:visited {
 .latest-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 32px;
+    grid-gap: 20px;
 }
 
 .latest-list-item {
@@ -325,90 +325,150 @@ a:visited {
 /* Latest news ends here */
 
 /* Deals section starts here */
-
 .deals {
     margin-bottom: 56px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 240px;
+    justify-content: space-between;
+    grid-gap: 20px;
+    min-width: 100%;
 }
 
 .funding-banner {
+    grid-column: span 4;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
 }
 
-.funding-banner * {
+.funding-banner a,
+.funding-banner a:visited {
     color: #f42;
-    font-family: "Avalon";
-    font-size: 15px;
 }
 
-.funding-banner h2 {
-    font-size: 28px;
-}
-
-.funding-banner a:hover,
-.funding-banner h2:hover {
-    color: #000;
+.funding-banner a:hover {
+    color: #111;
     text-decoration: underline;
 }
 
-.funding-rounds {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    justify-content: space-between;
+.funding-title {
+    font-family: "Avalon";
+    font-size: 28px;
+}
+
+.funding-rounds-nav {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;    
 }
 
-.funding-rounds a,
-.funding-rounds a:visited,
-.funding-rounds a:focus {
-    color: #444;
-}
-
-.funding-round-item {
+.funding-rounds-nav li {
     display: inline-block;
-    margin: 0;
-    padding: 0;
+    border-left: 1px solid #f42;
+    margin-top: 9px;
+    padding: 0 12px;
 }
 
-.field-and-venture {
-    width: 270px;
-    margin: 0;
-    margin-top: -3px;
-    padding: 0 0 10px 16px;
-    background-color: #fff2ed;
-    border-bottom: 1px solid orangered;
+.funding-rounds-nav li:nth-of-type(1) {
+    border: none;
 }
 
-.field-and-venture li {
-    display: inline-block;
-    padding: 5px 5px;
+.company {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 270px;
 }
 
-.field-and-venture i {
+.company-funding {
+    position: relative;
+    display: block;
+}
+
+.company-logo {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    margin: 10.6666666667px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border: none;
+    display: block;
+}
+
+.company h4 {
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0!important;
+    font-size: 18px!important;
+}
+
+.company-title {
+    background: #f42;
+    color: #fff;
+    padding: 10.667px 16px 10.667px 84px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 0;
+}
+
+.funding-info {
+    padding: 10.667px 16px 10.667px 84px;
     color: #000;
+    background: rgba(255,68,34,.08);
+    margin: 0;
 }
 
-.field-and-venture a:hover {
-    color: #000;
+.funding-amount {
+    font-weight: 700;
+    line-height
 }
 
-.funding-summary {
-    background-color: #fff2ed;
-    width: 270px;
-    padding: 15px 15px;
+.investment-card {
+    border-bottom: 1px solid #f42;
+}
+
+.category-venture,
+.category-venture:visited {
+    color: #555;
+    background: rgba(255,68,34,.05);
+    text-decoration: none;
+    font-size: 13px;    
+    display: block;
+    padding: 5px 0;
+}
+
+.category-venture > i {
+    color: #222;
+    padding: 10px 10px 0 16px;
+}
+
+.category-venture > span:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.story-byline {
+    padding: 10px 16px 16px 16px;
+    background: rgba(255,68,34,.05);
+}
+
+.byline-link,
+.byline-link:hover,
+.byline-link:focus {
+    color: #555;
     font-size: 13px;
 }
 
-.funding-summary span {
-    color: #777;
+.story-title-source {
+    color: #aaa;
     font-size: 12px;
 }
-/* Funding section ends here */
 
-/* Top stories by category starts here */
+/* New funding round styles end here */
 
 .categories {
     display: grid;
@@ -686,7 +746,28 @@ a:visited {
         justify-content: flex-end;
     }
     
-    .funding-round-item:nth-of-type(4) {
+    .deals {
+        margin-bottom: 56px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 60px 240px;
+        justify-content: space-between;
+        grid-gap: 20px;
+    }
+
+    .funding-banner {
+        grid-column: span 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .funding-rounds-nav li:nth-of-type(1) {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .company:nth-of-type(4) {
         display: none;
     }
 
