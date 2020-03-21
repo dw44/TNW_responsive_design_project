@@ -87,12 +87,20 @@ a:visited {
 
 .center-right-nav {
     display: flex;
-    align-items: center;
+    width: 50px;
+
+}
+.center-right-nav > a {
+    display: flex;
     justify-content: center;
-    max-height: 48px;
-    max-width: 24px;
-    padding: 0 16px;
+    align-items: center;
+    flex: 1;
+    width: 48px;
     border-left: 1px solid #aaa;
+}
+
+.center-right-nav > a:nth-of-type(2) {
+    display: none;
 }
 
 .fa-search {
@@ -817,6 +825,25 @@ a:visited {
     .top-navbar,
     .center-left-nav {
         display: none;
+    }
+
+    .second-nav {
+        display: block;
+    }
+
+    .center-right-nav {
+        display: flex;
+        width: 100px;
+        float: right;
+    }
+    .center-right-nav > a {
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        width: 48px;
+        height: 48px;
+        border-left: 1px solid #aaa;
     }
 
     .cover-story-container {
